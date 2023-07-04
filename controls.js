@@ -1,8 +1,8 @@
 // This file handles the playback controls for the audio element
 
 // Import the audio element from audio.js module
-import { audio } from "./audio.js";
-
+// import { audio } from "./audio.js";
+import audio from "./audio.js"
 // Get the control elements by id
 const speedUp = document.getElementById("speedUp");
 const speedDown = document.getElementById("speedDown");

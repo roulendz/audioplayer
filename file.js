@@ -1,7 +1,8 @@
 // This file handles the file input element and loads an audio file
 
 // Import the audio element from audio.js module
-import { audio } from "./audio.js";
+// import { audio } from "./audio.js";
+import audio from "./audio.js"
 
 // Get the file input element by id
 const fileInput = document.getElementById("fileInput");

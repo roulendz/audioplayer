@@ -3,6 +3,7 @@
 const audio = document.getElementById("audio");
 
 // Get the saved audio time from localStorage
+let timer;
 let savedTime = localStorage.getItem("audioTime");
 
 // Set the audio current time to the saved time if it exists
@@ -43,7 +44,7 @@ win.addEventListener("blur", pauseAudioPermanent); // Pause when window loses fo
 win.addEventListener("focus", resumeAudio); // Resume when window gains focus
 
 // Get the textarea element
-// const textarea = document.getElementById("textarea");
+const textarea = document.getElementById("textarea");
 
 // Add event listener for textarea keydown event
 textarea.addEventListener("keydown", pauseAudio); // Pause when typing in textarea
@@ -57,3 +58,6 @@ textarea.addEventListener("keydown", function (e) {
     pauseAudio(); // Pause when pressing one of the keys in textarea
   }
 });
+
+// Export the audio variable as a default export
+export default audio;
